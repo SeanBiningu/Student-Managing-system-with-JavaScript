@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./student.css">
+
+ 
+</head>
+<body>
+
+
+     <nav class="navy">
+
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Student Management System</h2>
+            </div>
+          
+    </nav>
+
+
+
+  <!-- Main Content -->
+
+    <div class="container">
+      
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="header">
+
+
+                <h1>Profile</h1>
+
+                  <ul class="menu">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        Students
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+
+                <input type="text" id="search" placeholder="Search student...">
+            </header>
+            
+ <!-- Dashboard Cards -->
+
+
+            <section class="cards">
+
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3 id="totalStudents">0</h3>
+                        <p>Total Students</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <h3>3</h3>
+                        <p>Courses</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h3>4</h3>
+                        <p>Teachers</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Add Student Form -->
+            <section class="form-section">
+
+                <h2>Add Student</h2>
+
+                <form id="studentForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Student Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="Course"
+                        required
+                    >
+
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+
+                    <button type="submit">
+                        Add Student
+                    </button>
+
+                </form>
+
+            </section>
+
+
+ <!-- Student Table -->
+
+            <section class="table-section">
+
+                <h2>Student List</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+
+<!-- Students will appear here -->
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="student.js">
+
+    </script>
+
+</body>
+</html>
